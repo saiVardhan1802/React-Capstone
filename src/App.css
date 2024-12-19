@@ -27,3 +27,9 @@
   border: 0.1rem solid red;
   border-radius: 0.3rem;
 }
+
+.genre-selections {
+  text-align: left;
+  position: relative;
+  left: 1vw;
+}

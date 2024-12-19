@@ -1,6 +1,7 @@
 import SignupForm from "../components/SignupForm";
 import Title from "../components/Title.jsx"
 import image13 from "../assets/image13.png"
+import Paragraph from "../components/Paragraph.jsx";
 
 export default function Home() {
     return (
@@ -18,7 +19,7 @@ export default function Home() {
                         height: '100vh'
                     }}
                 />
-                <p
+                {/* <p
                     style={{
                         color: 'white',
                         fontFamily: 'Roboto',
@@ -33,14 +34,34 @@ export default function Home() {
                         bottom: '25vh',
                         left: '3vw'
                     }}
-                >Discover new things on Superapp</p>
+                >Discover new things on Superapp</p> */}
+                <Paragraph style={{
+                        fontSize: '4rem',
+                        fontWeight: '900',
+                        lineHeight: '7.44vh',
+                        bottom: '25vh',
+                        left: '3vw'
+                    }} 
+                    content = 'Discover new things on Superapp'
+                 />
             </div>
             <div style={{
                 background: "black",
                 height: "100vh",
                 width: "50vw"
             }}>
-                 <Title />
+                 <Title style={{
+                    fontFamily: 'Single Day',
+                    fontSize: '67px',
+                    fontWeight: '400',
+                    lineHeight: '93.59px',
+                    textAlign: 'center',
+                    textUnderlinePosition: 'from-font',
+                    textDecorationSkipInk: 'none',
+                    color: '#72DB73',
+                    position: 'relative',
+                    top: '3vh',
+                 }} />
                  <p
                     style={{
                         color: 'white',

@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom";
 
 export default function SignupForm() {
     const [formData, setFormData] = useState({
@@ -15,6 +16,8 @@ export default function SignupForm() {
         userName: false,
         termsAndConditions: false,
     })
+
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -41,6 +44,8 @@ export default function SignupForm() {
         if (termsAndConditions === false) {
             setError((prevState) => { return { ...prevState, termsAndConditions: true } })
         }
+        localStorage.setItem("user", JSON.stringify(formData));
+        navigate("/movies");
     }
 
     return (

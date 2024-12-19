@@ -1,17 +1,24 @@
-export default function Title() {
+// import PropTypes from 'prop-types';
+
+// export default function Title(props) {
+
+//     return (
+//         <h1
+//             style=
+//                     {props.style}
+                
+//         >Super app</h1>
+//     )
+// }
+
+// Title.propTypes = {
+//     style: PropTypes.object, // style should be an object
+// };
+
+function Title(props) {
     return (
-        <h1
-            style={{fontFamily: 'Single Day',
-                fontSize: '67px',
-                fontWeight: '400',
-                lineHeight: '93.59px',
-                textAlign: 'center',
-                textUnderlinePosition: 'from-font',
-                textDecorationSkipInk: 'none',
-                color: '#72DB73',
-                position: 'relative',
-                top: '3vh',
-                }}
-        >Super app</h1>
+        <h1 style={props.style}>Super app</h1>
     )
 }
+
+export default Title;
